@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/convert.css" />
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="http://kit.fontawesome.com/267a9d673d.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Kazi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./convert.html">Currency Converter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quiz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar Ends-->
+
+    <!--Main Section-->
+    <section class="main-section container px-3 py-5 ">
+
+        <div class="card bg-#ffea97 text-light mx-auto">
+            <img src="image/study1.svg" alt="image">
+            <h1 class="text-light text-center mb-5">Currency Converter</h1>
+
+            <div class="converter-card">
+                <label for="from">From</label>
+                <select class="my-2" id="from">
+                    <option value="">--Select</option>
+                    <option value="BDT">Bangladesi Taka</option>
+                    <option value="USD">US Dollar</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="SAR">Saudi Riyal</option>
+                    <option value="PKR">Pakistani Rupee</option>
+                    <option value="RUB">Russian Ruble</option>
+                </select>
+
+                <p class="mb-0 mt-3">Amount</p>
+                <input type="number" id="input" />
+
+                <label for="to" class="mt-4">To</label>
+                <select class="my-2" id="to">
+                    <option value="">--Select</option>
+                    <option value="BDT">Bangladesi Taka</option>
+                    <option value="USD">US Dollar</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="SAR">Saudi Riyal</option>
+                    <option value="PKR">Pakistani Rupee</option>
+                    <option value="RUB">Russian Ruble</option>
+                </select>
+                <p class="mb-0 mt-3">Converted Currency</p>
+                <input class="bg-light" type="number" id="output" disabled />
+                <button type="button" class="btn btn-outline-info mt-5" onclick="convert()">Calculate</button>
+            </div>
+
+        </div>
+    </section>
+    <!--Main Section Ends-->
+
+    <!--Footer-->
+    <footer class="bg-dark">
+        <p class="text-danger text-center pt-4"> All Rights Reserved by <br> &copy; Kazi Taneem </p>
+    </footer>
+    <!--Footer Ends-->
+    <script src="js/convert.js"></script>
+</body>
+
+</html>

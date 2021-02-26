@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="http://kit.fontawesome.com/267a9d673d.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Kazi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="convert.html">Currency Converter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quiz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar Ends-->
+
+    <!--Main Section-->
+    <section class="main-section container px-3 py-5 ">
+
+        <div class="card bg-#ffea97 text-light mx-auto">
+            <img src="image/study1.svg" alt="image">
+
+            <h1 class="text-light text-center">JS Assignment</h1>
+            <p class="mt-3 mb-5 text-center">Welcome to Kazi Taneem</p>
+
+            <a href="./convert.html" class="text-center">
+                <button type="button" class="btn btn-outline-info mb-4">Currency Converter</button>
+            </a>
+
+            <a href="#" class="text-center">
+                <button type="button" class="btn btn-outline-info mb-4">Start Quiz</button>
+            </a>
+
+        </div>
+        <div class="fortune text-center mx-auto">
+            <p id="set-fortune"></p>
+        </div>
+    </section>
+    <!--Main Section Ends-->
+
+    <!--Footer-->
+    <footer class="bg-dark">
+        <p class="text-danger text-center pt-4"> All Rights Reserved by <br> &copy; Kazi Taneem </p>
+    </footer>
+    <!--Footer Ends-->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

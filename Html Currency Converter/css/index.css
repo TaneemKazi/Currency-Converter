@@ -1,0 +1,75 @@
+*
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    /* background-color: #6cd8dd; */
+}
+
+
+/* main sec */
+.main-section{
+    min-height: -moz-calc(100vh - 200px);
+    min-height: -webkit-calc(100vh - 200px);
+    min-height: -o-calc(100vh - 200px);
+    min-height: calc(100vh - 200px);
+}
+
+.card{
+    width: 100%; 
+    max-width: 800px;
+    padding: 50px 30px;
+    margin-top: 110px;
+    margin-bottom: 80px;
+    border-radius: 5px;
+    /* background-color: #6cd8dd; */
+    background-color: rgb(14, 4, 37);
+}
+.card img{
+    height: auto;
+    max-width: 100%;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -124px;
+    margin-bottom: 50px;
+}
+
+.card button{
+    width: 100%;
+    max-width: 200px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    border-radius: 50px;
+}
+
+.fortune{
+    width: 100%; 
+    max-width: 800px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin-bottom: 0;
+}
+
+.fortune p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+/* footer */
+
+footer{
+    height: 100px;
+}

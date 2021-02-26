@@ -1,0 +1,82 @@
+*
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    /* background-color: #6cd8dd; */
+}
+
+/* main sec */
+.main-section{
+    min-height: -moz-calc(100vh - 200px);
+    min-height: -webkit-calc(100vh - 200px);
+    min-height: -o-calc(100vh - 200px);
+    min-height: calc(100vh - 200px);
+}
+
+.card{
+    width: 100%; 
+    max-width: 800px;
+    padding: 50px 30px;
+    margin-top: 110px;
+    margin-bottom: 80px;
+    /* border-radius: 5px; */
+    /* background-color: #6cd8dd; */
+    background-color: rgb(14, 4, 37);
+}
+
+.card button{
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    
+}
+
+.card img{
+    height: auto;
+    max-width: 100%;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -124px;
+    margin-bottom: 50px;
+}
+
+.converter-card{
+    max-width: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.converter-card select{
+    padding: 6px 10px;
+    /* border-radius: 4px; */
+    border-radius: 50px;
+}
+
+.converter-card input{
+    padding: 6px 10px;
+    /* border-radius: 4px; */
+    margin-top: 5px;
+    border-radius: 50px;
+}
+
+/* footer */
+footer{
+    height: 100px;
+}
