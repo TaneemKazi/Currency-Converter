@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url(/image/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Main Section */
+
+.main-section {
+  min-height: -moz-calc(100vh - 136px);
+  min-height: -webkit-calc(100vh - 136px);
+  min-height: -o-calc(100vh - 136px);
+  min-height: calc(100vh - 136px);
+}
+
+.score {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  max-width: 800px;
+  padding: 3px 30px;
+  margin-top: 120px;
+  border-radius: 7px;
+  font-weight: 900;
+}
+
+.card {
+  width: 100%;
+  max-width: 800px;
+  padding: 50px 30px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  margin-left: 110px;
+  border-radius: 7px;
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    padding: 50px 60px;
+    margin-left: 750px;
+  }
+}
+
+.option-box {
+  display: flex;
+  border-radius: 4px;
+  padding: 5px 10px;
+  align-items: center;
+  height: 40px;
+}
+
+.option-box-default {
+  background-color: transparent;
+}
+
+.option-box-default p:hover {
+  cursor: default;
+  color: rgb(166, 231, 13);
+}
+
+.option-box + .option-box {
+  margin-top: 25px;
+}
+
+.option-box p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0px;
+  color: aliceblue;
+}
+
+.option-text {
+  margin-left: 15px;
+  width: 100%;
+}
+
+
+/* Footer */
+footer {
+  height: 150px;
+}

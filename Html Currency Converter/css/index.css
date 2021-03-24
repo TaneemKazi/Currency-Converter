@@ -13,36 +13,48 @@ html{
 body{
     width: 100%;
     overflow-x: hidden;
-    /* background-color: #6cd8dd; */
+    align-items: center;
+    background-image: url(/image/bg.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 
 /* main sec */
-.main-section{
-    min-height: -moz-calc(100vh - 200px);
-    min-height: -webkit-calc(100vh - 200px);
-    min-height: -o-calc(100vh - 200px);
-    min-height: calc(100vh - 200px);
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: -moz-calc(100vh - 156px);
+    min-height: -webkit-calc(100vh - 156px);
+    min-height: -o-calc(100vh - 156px);
+    min-height: calc(100vh - 156px);
+    /* margin-top: -650px; */
+    
 }
 
+img{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+    
 .card{
     width: 100%; 
     max-width: 800px;
     padding: 50px 30px;
-    margin-top: 110px;
+    margin-top: 100px;
     margin-bottom: 80px;
-    border-radius: 5px;
-    /* background-color: #6cd8dd; */
-    background-color: rgb(14, 4, 37);
+    background-color: transparent;
+    border: none;
 }
-.card img{
-    height: auto;
-    max-width: 100%;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -124px;
-    margin-bottom: 50px;
+
+@media screen and (max-width:800px){
+    .card{
+        margin-top: 150px;
+    }
 }
 
 .card button{
@@ -55,16 +67,28 @@ body{
 
 .fortune{
     width: 100%; 
-    max-width: 800px;
-    border: 1px solid black;
+    max-width: 400px;
+    /* border: 1px solid whitesmoke; */
     border-radius: 5px;
-    padding: 10px 5px;
-    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 6rem;
+
+    background-color: rgba(54, 182, 214, 0.13);
+    color: rgba(185, 221, 241, 0.781);
+}
+
+button{
+    opacity: 0.8;
 }
 
 .fortune p{
+    /* fortune paragrapgh */
     font-size: 1.2rem;
     font-weight: 500;
+    max-width: max-content;
 }
 
 

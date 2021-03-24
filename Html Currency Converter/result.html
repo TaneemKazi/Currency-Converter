@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/study.svg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/result.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/267a9d673d.js" crossorigin="anonymous"></script>
+    <title>Result Page</title>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Kazi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quiz.html">MCQ Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./convert.html">Currency Converter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Main Section Start -->
+    <section class="main-section container px-3 py-5">
+        <div class="card text-light mx-auto">
+            <h1 class="text-center mb-5">Quiz Result</h1>
+            <div class="score-board">
+                <p id="score-text">Your Score: 0</p>
+                <p id="number-text">Number of Questions: 0</p>
+                <p id="correct-text">Total Correct Answer: 0</p>
+                <p id="false-text" class="mb-5">Total False Answer: 0</p>
+                <a href="./quiz.html" class="text-center">
+                <button type="button" class="btn btn-warning mb-4">Re-Attempt Quiz</button>
+                </a>
+                <a href="index.html" class="text-center">
+                <button type="button" class="btn btn-danger">Return to Homepage</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Main Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-dark">
+      <p class="text-light text-center pt-3"> All Rights Reserved by <br> &copy; Kazi Taneem </p>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="js/result.js"></script>
+</body>
+</html>

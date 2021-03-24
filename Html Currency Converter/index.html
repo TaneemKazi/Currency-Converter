@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -31,7 +32,7 @@
                         <a class="nav-link" href="convert.html">Currency Converter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quiz</a>
+                        <a class="nav-link" href="quiz.html">Quiz</a>
                     </li>
                 </ul>
             </div>
@@ -40,33 +41,32 @@
     <!--Navbar Ends-->
 
     <!--Main Section-->
-    <section class="main-section container px-3 py-5 ">
+        <section class="main-section container ">
 
-        <div class="card bg-#ffea97 text-light mx-auto">
-            <img src="image/study1.svg" alt="image">
+            <div class="card bg-#ffea97 text-light mx-auto">
 
-            <h1 class="text-light text-center">JS Assignment</h1>
-            <p class="mt-3 mb-5 text-center">Welcome to Kazi Taneem</p>
+                <h1 class="text-center">JS Assignment</h1>
+                <p class="mt-3 mb-5 text-center">Welcome to Kazi Taneem</p>
 
-            <a href="./convert.html" class="text-center">
-                <button type="button" class="btn btn-outline-info mb-4">Currency Converter</button>
-            </a>
+                <a href="./convert.html" class="text-center">
+                    <button type="button" class="btn btn-danger mb-4 ">Currency Converter</button>
+                </a>
 
-            <a href="#" class="text-center">
-                <button type="button" class="btn btn-outline-info mb-4">Start Quiz</button>
-            </a>
+                <a href="quiz.html" class="text-center">
+                    <button type="button" class="btn btn-warning mb-4">Start Quiz</button>
+                </a>
 
-        </div>
-        <div class="fortune text-center mx-auto">
-            <p id="set-fortune"></p>
-        </div>
-    </section>
-    <!--Main Section Ends-->
+            </div>
+            <div class="fortune mx-auto">
+                <p id="set-fortune" class="pt-2"></p>
+            </div>
+        </section>
+        <!--Main Section Ends-->
 
-    <!--Footer-->
-    <footer class="bg-dark">
-        <p class="text-danger text-center pt-4"> All Rights Reserved by <br> &copy; Kazi Taneem </p>
-    </footer>
+        <!--Footer-->
+        <footer class="bg-dark">
+            <p class="text-light text-center pt-4"> All Rights Reserved by <br> &copy; Kazi Taneem </p>
+        </footer>
     <!--Footer Ends-->
     <script src="js/index.js"></script>
 </body>

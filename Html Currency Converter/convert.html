@@ -31,7 +31,7 @@
                         <a class="nav-link active" aria-current="page" href="./convert.html">Currency Converter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quiz</a>
+                        <a class="nav-link" href="quiz.html">Quiz</a>
                     </li>
                 </ul>
             </div>
@@ -40,16 +40,22 @@
     <!--Navbar Ends-->
 
     <!--Main Section-->
-    <section class="main-section container px-3 py-5 ">
+    <section class="main-section container px-1 py-5 ">
 
         <div class="card bg-#ffea97 text-light mx-auto">
-            <img src="image/study1.svg" alt="image">
-            <h1 class="text-light text-center mb-5">Currency Converter</h1>
+            <h1 class="text-light text-center mb-4">Currency Converter</h1>
+            <div class="label">
+                <div>
+                    <label for="from" class="mt-3">From</label>
+                </div>
+                <div>
+                    <label for="to" class="mt-3">To</label>
+                </div>
+            </div>
+            <div class="converter-card fontawesome my-3">
 
-            <div class="converter-card">
-                <label for="from">From</label>
                 <select class="my-2" id="from">
-                    <option value="">--Select</option>
+                    <option value="NAN">-- Select</option>
                     <option value="BDT">Bangladesi Taka</option>
                     <option value="USD">US Dollar</option>
                     <option value="INR">Indian Rupee</option>
@@ -57,13 +63,11 @@
                     <option value="PKR">Pakistani Rupee</option>
                     <option value="RUB">Russian Ruble</option>
                 </select>
-
-                <p class="mb-0 mt-3">Amount</p>
-                <input type="number" id="input" />
-
-                <label for="to" class="mt-4">To</label>
+                <div class="exchange_icon">
+                    <i class="fa fa-exchange pt-3" aria-hidden="true"></i>
+                </div>
                 <select class="my-2" id="to">
-                    <option value="">--Select</option>
+                    <option value="NAN">-- Select</option>
                     <option value="BDT">Bangladesi Taka</option>
                     <option value="USD">US Dollar</option>
                     <option value="INR">Indian Rupee</option>
@@ -71,9 +75,16 @@
                     <option value="PKR">Pakistani Rupee</option>
                     <option value="RUB">Russian Ruble</option>
                 </select>
-                <p class="mb-0 mt-3">Converted Currency</p>
-                <input class="bg-light" type="number" id="output" disabled />
-                <button type="button" class="btn btn-outline-info mt-5" onclick="convert()">Calculate</button>
+
+
+            </div>
+            <div class="converter-card fontawesome">
+                <input type="number" id="input" />
+                <div class="exchange_icon">
+                    <i class="fa fa-exchange pt-3" aria-hidden="true"></i>
+                </div>
+                <input class="text-dark" type="number" id="output" disabled />
+                <button type="button" class="btn btn-outline-info" onclick="convert()">Calculate</button>
             </div>
 
         </div>
@@ -82,7 +93,7 @@
 
     <!--Footer-->
     <footer class="bg-dark">
-        <p class="text-danger text-center pt-4"> All Rights Reserved by <br> &copy; Kazi Taneem </p>
+        <p class="text-center pt-4 text-light"> All Rights Reserved by <br> &copy; Kazi Taneem </p>
     </footer>
     <!--Footer Ends-->
     <script src="js/convert.js"></script>

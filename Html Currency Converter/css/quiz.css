@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url(/image/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   
+}
+
+/* Main Section */
+
+.main-section {
+  min-height: -moz-calc(100vh - 136px);
+  min-height: -webkit-calc(100vh - 136px);
+  min-height: -o-calc(100vh - 136px);
+  min-height: calc(100vh - 136px);
+}
+
+.card {
+  width: 100%;
+  max-width: 800px;
+  padding: 50px 30px;
+  margin-top: 170px;
+  margin-bottom: 80px;
+  background-color: transparent;
+  border: none;
+}
+
+.card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -130px;
+  margin-bottom: 40px;
+}
+
+.card-input {
+  width: 100%;
+  max-width: 500px;
+}
+
+.card input {
+  padding: 6px 10px;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50px;
+  margin-left: 138px;
+}
+
+.card button {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50px;
+  margin-left: 138px;
+  color: aquamarine;
+  background-color: cadetblue;
+}
+
+.quizcount{
+  margin-left: 115px;
+}
+
+
+@media screen and (max-width:500px){
+  .card input {
+      margin-left: 105px;
+  }
+}
+@media screen and (max-width:500px){
+  .card button {
+      margin-left: 105px;
+  }
+}
+@media screen and (max-width:500px){
+  .quizcount {
+      margin-left: 80px;
+  }
+}
+
+h1{
+  color: rgb(216, 25, 25) ;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  height: 120px;
+}

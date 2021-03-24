@@ -10,38 +10,62 @@ html{
     width: 100%;
     overflow-x: hidden;
 }
+
 body{
     width: 100%;
     overflow-x: hidden;
-    /* background-color: #6cd8dd; */
+    align-items: center;
+    background-image: url(/image/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* main sec */
-.main-section{
-    min-height: -moz-calc(100vh - 200px);
-    min-height: -webkit-calc(100vh - 200px);
-    min-height: -o-calc(100vh - 200px);
-    min-height: calc(100vh - 200px);
+/*Main section Stars*/
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: -moz-calc(100vh - 156px);
+    min-height: -webkit-calc(100vh - 156px);
+    min-height: -o-calc(100vh - 156px);
+    min-height: calc(100vh - 156px);
 }
 
+
+.label{
+    margin-left: -18%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*Main section Ends*/
+
+.exchange_icon{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*Card Style Starts*/
 .card{
     width: 100%; 
     max-width: 800px;
     padding: 50px 30px;
-    margin-top: 110px;
-    margin-bottom: 80px;
-    /* border-radius: 5px; */
-    /* background-color: #6cd8dd; */
-    background-color: rgb(14, 4, 37);
+    margin-top: 125px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    border: none;
 }
 
 .card button{
     width: 100%;
     max-width: 200px;
-    margin-left: auto;
+    margin-left: -328px;
     margin-right: auto;
     border-radius: 50px;
-    
+    margin-top: 90px;
 }
 
 .card img{
@@ -58,25 +82,45 @@ body{
     max-width: 100%;
     width: 500px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: auto;
     margin-right: auto;
 }
 
 .converter-card select{
+    font-weight: bold;
     padding: 6px 10px;
     /* border-radius: 4px; */
     border-radius: 50px;
+    margin-left: -2%;
+    background-color: rgba(64, 233, 245, 0.747);
+    min-width: 200px;
+    border: none;
 }
 
 .converter-card input{
-    padding: 6px 10px;
-    /* border-radius: 4px; */
+    text-align: center;
+    font-weight: bold;
+    padding: 6px;
     margin-top: 5px;
+    margin-left: -2%;
     border-radius: 50px;
+    background-color: rgba(71, 203, 255, 0.514);
+    border: none;
+    height: min-content;
+    min-width: 200px;
+    max-width: 200px;
 }
+.converter-card output{
+    font-weight: bold;
+    text-emphasis-color: black;
+}
+
+/*Card Style Ends*/
+
 
 /* footer */
 footer{
     height: 100px;
 }
+/* footer ends */

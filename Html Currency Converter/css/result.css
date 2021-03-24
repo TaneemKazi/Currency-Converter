@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url(/image/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Main Section */
+.main-section {
+  min-height: -moz-calc(100vh - 136px);
+  min-height: -webkit-calc(100vh - 136px);
+  min-height: -o-calc(100vh - 136px);
+  min-height: calc(100vh -136px);
+}
+
+.card {
+  width: 100%;
+  max-width: 800px;
+  padding: 50px 30px;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -130px;
+  margin-bottom: 40px;
+}
+
+.score-board {
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.score-board p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.card button {
+  width: 100%;
+}
+
+/* Footer */
+
+footer {
+  height: 80px;
+}
